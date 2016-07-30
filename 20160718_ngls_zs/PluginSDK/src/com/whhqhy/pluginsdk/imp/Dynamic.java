@@ -8,9 +8,9 @@ import android.content.DialogInterface;
 import android.content.DialogInterface.OnClickListener;
 import android.content.Intent;
 
-import com.whhqhy.pluginimpl.R;
 import com.whhqhy.pluginimpl.interfaces.IDynamic;
 import com.whhqhy.pluginimpl.interfaces.YKCallBack;
+import com.whhqhy.pluginsdk.R;
 import com.whhqhy.pluginsdk.bean.Bean;
 
 public class Dynamic implements IDynamic {
@@ -42,7 +42,7 @@ public class Dynamic implements IDynamic {
 	}
 
 	@Override
-	public void startPluginAcitvity(Context context, Class<?> cls) {
+	public void startPluginActivity(Context context, Class<?> cls) {
 		// TODO Auto-generated method stub
 		Intent intent = new Intent(context, cls);
 		context.startActivity(intent);
